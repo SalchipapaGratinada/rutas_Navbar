@@ -19,7 +19,14 @@ const Admin = () => {
   }, [navigate])
 
   return (
-    <div>Admin</div>
+    <div>
+      <h2>ruta protegida</h2>
+      {
+        user && (
+          <h3>Usuario: {user.email}</h3>
+        )
+      }
+    </div>
   )
 }
 
