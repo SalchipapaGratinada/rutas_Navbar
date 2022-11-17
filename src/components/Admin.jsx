@@ -1,6 +1,7 @@
 import React from 'react'
 import { auth } from '../firebase'
 import { useNavigate } from 'react-router-dom'
+import Registro from './Registro'
 
 const Admin = () => {
 
@@ -23,7 +24,8 @@ const Admin = () => {
       <h2>ruta protegida</h2>
       {
         user && (
-          <h3>Usuario: {user.email}</h3>
+           //<h3>Usuario: {user.email}</h3> */
+          <Registro/>
         )
       }
     </div>
